@@ -1,6 +1,12 @@
 
 /*estrutura das fontes */
-*{
+
+.h1{
+    background-position: center;
+    background-color: chartreuse;
+}
+
+* {
     padding: 0%;
     margin: 0%;
     outline: none;
@@ -10,20 +16,20 @@
 }
 
 /*alinhamento do formulario no centro e a cor de fundo */
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: blueviolet;
 }
-
-    input{
+    input {
         margin: 2px;
         border: none;
         border-radius: 3px;
     }
-input[type=text]{
+
+input[type = text] {
     width: calc(100% - 4px);
     height: 70px;
     border-bottom-right-radius: 30px;
@@ -31,47 +37,52 @@ input[type=text]{
 
 
 }
-input[type=button]{
+
+input[type = button] {
         width: 100px;
         height: 50px;
         transition: ease 0.2s;
         cursor: pointer;
-       
 }
-div#calculadora{
+
+div#calculadora {
     box-shadow: 0 0 20px black;
-
-
 }
-div#calculadora div{
+
+div#calculadora div {
     display: flex;
 }
+
 div#calculadora div input:nth-child(4){
     background-color: #8ac242
 
 }
+
 div#calculadora div input:nth-child(5){
     background-color: cadetblue;
 
 }
+
 div#quarta input:nth-child(1){
     background-color: chocolate;
 }
+
 div#quarta input:nth-child(1), div#calculadora{
     border-bottom-left-radius: 35px;
 
 }
+
 div#quarta input:nth-child(3){
     background-color: cornflowerblue;
 }
+
 div#quarta input:nth-child(5), div#calculadora{
         border-bottom-right-radius: 36px;
 }
-    input[type=button]:hover{
+    input[type = button]:hover {
         filter: brightness(50%);
-
     }
 
-    input[type=button]:active{
+    input[type = button]:active {
         transform: scale(0.9);
     }
